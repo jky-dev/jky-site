@@ -47,7 +47,7 @@ const InfoWithImage = ({
       ) : (
         <>
           <Content title={title} subtitle={subtitle} paragraph={paragraph} />
-          <ImageRender />
+          <ImageRender imagePath={imagePath} />
         </>
       )}
     </>
