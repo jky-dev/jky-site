@@ -5,7 +5,7 @@ import styles from './styles.module.css'
 export default function Home() {
   return (
     <>
-      <div className={`${styles.heroGradient} bg-blue-800`}>
+      <div className={styles.heroGradient}>
         <div className='max-w-screen-xl m-auto pt-8'>
           <Nav />
           <section id='hero-section-1' className='py-40 flex justify-between'>
@@ -28,7 +28,7 @@ export default function Home() {
           </section>
         </div>
       </div>
-      <section className='max-w-screen-xl m-auto py-20'>
+      <section className='max-w-screen-xl m-auto py-40'>
         <h4 className='text-center mb-7'>WORK</h4>
         <span className='flex justify-center mb-32'>
           <span>
@@ -51,6 +51,23 @@ export default function Home() {
             imagePath='/img/man_w_laptop.webp'
           />
         </div>
+      </section>
+      <section className='max-w-screen-xl m-auto py-40'>
+        <h4 className='text-center mb-16'>PROJECTS</h4>
+        <span className='flex justify-center mb-32'>
+          <span>
+            <h1>P10 Racing</h1>
+            <p className='altColor'>React - Supabase</p>
+          </span>
+        </span>
+        <div className='w-3/4 mx-auto my-32'>
+          <p>
+            A custom fantasy league for Formula 1 where you compete against
+            friends to see who can most accurately predict the driver that
+            finishes 10th in a race.
+          </p>
+        </div>
+        <img className='m-auto rounded-3xl' src='/img/car.webp' />
       </section>
     </>
   )
