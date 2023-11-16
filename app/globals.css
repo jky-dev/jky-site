@@ -34,6 +34,10 @@ p {
   color: #ff6b00;
 }
 
+.secondaryBg {
+  background-color: #28304e;
+}
+
 body {
   background-color: #1f253d;
   color: #f6f6f6;

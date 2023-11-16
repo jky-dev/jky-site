@@ -10,7 +10,7 @@ export default function Home() {
           <Nav />
           <section id='hero-section-1' className='py-40 flex justify-between'>
             <div>
-              <h2>{`Hello! I'm`}</h2>
+              <h2 className='secondaryColor'>{`Hello! I'm`}</h2>
               <h1>Jacky</h1>
             </div>
             <img></img>
@@ -52,23 +52,25 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className='max-w-screen-xl m-auto py-40'>
-        <h4 className='text-center mb-16'>PROJECTS</h4>
-        <span className='flex justify-center mb-32'>
-          <span>
-            <h1>P10 Racing</h1>
-            <p className='altColor'>React - Supabase</p>
+      <div className='secondaryBg'>
+        <section className='max-w-screen-xl m-auto py-40'>
+          <h4 className='text-center mb-16'>PROJECTS</h4>
+          <span className='flex justify-center mb-32'>
+            <span>
+              <h1>P10 Racing</h1>
+              <p className='altColor'>React - Supabase</p>
+            </span>
           </span>
-        </span>
-        <div className='w-3/4 mx-auto my-32'>
-          <p>
-            A custom fantasy league for Formula 1 where you compete against
-            friends to see who can most accurately predict the driver that
-            finishes 10th in a race.
-          </p>
-        </div>
-        <img className='m-auto rounded-3xl' src='/img/car.webp' />
-      </section>
+          <div className='w-3/4 mx-auto my-32'>
+            <p>
+              A custom fantasy league for Formula 1 where you compete against
+              friends to see who can most accurately predict the driver that
+              finishes 10th in a race.
+            </p>
+          </div>
+          <img className='m-auto rounded-3xl' src='/img/car.webp' />
+        </section>
+      </div>
     </>
   )
 }
