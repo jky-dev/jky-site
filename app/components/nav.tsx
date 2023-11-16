@@ -1,9 +1,9 @@
 const Nav = () => {
   return (
-    <div>
-      <span>Personal</span>
-      <span>Projects</span>
-      <span>About</span>
+    <div className='flex justify-end gap-6'>
+      <p>Personal</p>
+      <p>Projects</p>
+      <p>About</p>
     </div>
   )
 }

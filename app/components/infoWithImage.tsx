@@ -17,14 +17,14 @@ interface ImageRenderProps {
 }
 
 const ImageRender = ({ imagePath }: ImageRenderProps) => {
-  return <div>Image</div>
+  return <div className='text-center'>Image</div>
 }
 
 const Content = ({ title, subtitle, paragraph }: ContentProps) => {
   return (
-    <div>
+    <div className=''>
       <h2>{title}</h2>
-      <h4>{subtitle}</h4>
+      <h4 className='altColor mb-12'>{subtitle}</h4>
       <p>{paragraph}</p>
     </div>
   )
@@ -39,17 +39,19 @@ const InfoWithImage = ({
 }: InfoWithImageProps) => {
   return (
     <>
-      {imageLocation === 'before' ? (
-        <>
-          <ImageRender imagePath={imagePath} />
-          <Content title={title} subtitle={subtitle} paragraph={paragraph} />
-        </>
-      ) : (
-        <>
-          <Content title={title} subtitle={subtitle} paragraph={paragraph} />
-          <ImageRender imagePath={imagePath} />
-        </>
-      )}
+      <div className='grid grid-cols-2 gap-6'>
+        {imageLocation === 'before' ? (
+          <>
+            <ImageRender imagePath={imagePath} />
+            <Content title={title} subtitle={subtitle} paragraph={paragraph} />
+          </>
+        ) : (
+          <>
+            <Content title={title} subtitle={subtitle} paragraph={paragraph} />
+            <ImageRender imagePath={imagePath} />
+          </>
+        )}
+      </div>
     </>
   )
 }
