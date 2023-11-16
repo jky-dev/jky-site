@@ -17,12 +17,17 @@ interface ImageRenderProps {
 }
 
 const ImageRender = ({ imagePath }: ImageRenderProps) => {
-  return <div className='text-center'>Image</div>
+  return (
+    <img
+      className='m-auto rounded-3xl w-[400px] h-[400px] object-cover'
+      src={imagePath}
+    />
+  )
 }
 
 const Content = ({ title, subtitle, paragraph }: ContentProps) => {
   return (
-    <div className=''>
+    <div>
       <h2>{title}</h2>
       <h4 className='altColor mb-12'>{subtitle}</h4>
       <p>{paragraph}</p>

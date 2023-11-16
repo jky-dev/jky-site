@@ -41,14 +41,14 @@ export default function Home() {
             title='Pre Checkout'
             subtitle='Next.js - TypeScript - Kotlin'
             paragraph={`Building out new features around user authentication, account creation, identity verification and more, whilst handling user data safely and preventing harvesting of consumer details`}
-            imagePath='/mock'
+            imagePath='/img/lock.webp'
             imageLocation='after'
           />
           <InfoWithImage
             title='Merchant Success'
             subtitle='React - TypeScript - Kotlin - Java'
             paragraph={`Creating a brand new merchant experience from the ground up - providing a centralised online portal where merchants are able to self-serve and mange their account, view orders and reconciliation data, sales analytics and much more`}
-            imagePath='/mock'
+            imagePath='/img/man_w_laptop.webp'
           />
         </div>
       </section>
