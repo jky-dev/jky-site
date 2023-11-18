@@ -4,14 +4,17 @@
 
 h1 {
   font-size: 128px;
+  font-weight: 800;
 }
 
 h2 {
   font-size: 48px;
+  font-weight: 500;
 }
 
 h3 {
   font-size: 40px;
+  font-weight: 500;
 }
 
 h4 {
@@ -20,6 +23,7 @@ h4 {
 
 p {
   font-size: 24px;
+  font-weight: 300;
 }
 
 .mainWhite {
